@@ -2357,3 +2357,12 @@ aside.read-next {
 .site-footer {
   padding-left: 0px;
 }
+
+/* For images wider than the main text column and have #no-breakout in their src - don't break out. */
+.post-content img[src$='#no-breakout'] {
+  max-width: 100%;
+}
+
+body.author-template .content {
+  width: 75%; /* leave room for the sidebar */
+}

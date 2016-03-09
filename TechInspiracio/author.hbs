@@ -27,7 +27,7 @@
         <div class="author-meta">
             {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
             {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-            <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='Nincsenek írásai' singular='% írás' plural='% írás'}}</span>
+            <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='Nincsenek cikkei' singular='% cikk' plural='% cikk'}}</span>
         </div>
     </section>
 {{/author}}
@@ -39,3 +39,16 @@
     {{> "loop"}}
 
 </main>
+
+<aside class="sidebar">
+  <img class="profile-image" src="{{@blog.logo}}" alt="" />
+
+  {{navigation}}
+
+   <footer class="site-footer clearfix">
+     <section class="copyright">
+       <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/hu/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/2.5/80x15.png"></a><br>A <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">{{@blog.title}}</span> cikkei a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/hu">Creative Commons Nevezd Meg! - Így Add Tovább!</a> licensz alapján oszthatóak meg.
+     </section>
+   </footer>
+
+</aside>
