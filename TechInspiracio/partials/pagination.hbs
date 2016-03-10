@@ -1,0 +1,9 @@
+<nav class="pagination" role="navigation">
+    {{#if prev}}
+        <a class="newer-posts" href="{{page_url prev}}">&larr; Újabb cikkek</a>
+    {{/if}}
+    <span class="page-number">#{{page}} oldal {{pages}} oldalból</span>
+    {{#if next}}
+        <a class="older-posts" href="{{page_url next}}">Régebbi cikkek &rarr;</a>
+    {{/if}}
+</nav>
