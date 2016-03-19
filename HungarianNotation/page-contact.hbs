@@ -23,10 +23,15 @@
     </header>
 
     <section class="post-content">
+
+      <div>
+          {{content}}
+      </div>
+
       <div class="alert alert-success" role="alert" id="contact-success" style="display:none">Message sent. Thanks!</div>
       <div class="alert alert-danger" role="alert" id="contact-error" style="display:none">An error occurred when sending the message.</div>
       <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-        <span class="sr-only">45% Complete</span>
+        <span class="sr-only"></span>
       </div>
 
       <form id="contact-us-form" data-toggle="validator" role="form">
@@ -67,7 +72,6 @@
   <footer class="site-footer clearfix">
       <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
   </footer>
-
 </aside>
 
 <!-- Bootstrap with 1000Hz Twitter Bootstrap Validator plugin -->
@@ -91,7 +95,7 @@ $(window).on('load', function () {
 
 function postContactForm() {
   // To use the contact form, set this URL to a backend service that sends emails to your contact address
-  var contactSendMailUrl = "http://example.com/ghostContactSendMail.php";
+  var contactSendMailUrl = "http://gergelyorosz.com/ghost/ghostContactSendMail.php?siteName=HungarianNotation";
   var contactParameters = {
     senderName: $("#contact-name").val(),
     senderEmail: $("#contact-email").val(),
