@@ -47,7 +47,7 @@ a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
 h1 { font-size: 2em; margin: 0.67em 0; }
 abbr[title] { border-bottom: 1px dotted; }
-b, strong { font-weight: 700; }
+b, strong { font-weight: 900; }
 dfn { font-style: italic; }
 hr {
    -moz-box-sizing: content-box;
@@ -117,14 +117,6 @@ table { border-collapse: collapse; border-spacing: 0; }
         url("../fonts/casper-icons.svg?v=1#icons") format("svg");
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-  font-family: 'merriweather-font';
-  src: url('../fonts/Merriweather-Light.ttf?v=3');
-  src: url('../fonts/Merriweather-Light.ttf?v=3') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 .elusive-icon:before {
@@ -213,7 +205,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "merriweather-font", serif;
+    font-family: 'Merriweather', serif;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
@@ -888,7 +880,7 @@ body.nav-opened .nav {
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "merriweather-font", serif;
+    font-family: 'Merriweather', serif;
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
 }
@@ -1319,7 +1311,7 @@ body:not(.post-template) .post-title {
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
-    font-family: "merriweather-font", serif;
+    font-family: 'Merriweather', serif;
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
 }
@@ -2365,4 +2357,26 @@ aside.read-next {
 
 body.author-template .content {
   width: 75%; /* leave room for the sidebar */
+}
+
+.storybox {
+  background-color: rgb(104,107,117);
+  border-radius: 2rem;
+  color: white;
+  border-bottom: 0px;
+}
+
+.storybox .title {
+  padding: 1.5rem;
+}
+
+.storybox .content {
+  background-color: rgb(240, 240, 240);
+  color: black;
+  padding: 10pt;
+  font-size: 1.4rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  float: none;
+  width: 100%;
 }
