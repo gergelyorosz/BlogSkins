@@ -47,7 +47,7 @@ a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
 h1 { font-size: 2em; margin: 0.67em 0; }
 abbr[title] { border-bottom: 1px dotted; }
-b, strong { font-weight: 900; }
+b, strong { font-weight: 700; }
 dfn { font-style: italic; }
 hr {
    -moz-box-sizing: content-box;
@@ -206,6 +206,7 @@ body {
     height: 100%;
     max-height: 100%;
     font-family: 'Merriweather', serif;
+    font-weight: 300;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
@@ -2292,6 +2293,10 @@ aside.read-next {
    16. Theme Customizations
    ========================================================================== */
 
+.post-content img {
+  max-width: 105%;
+}
+
 .read-next-story h2 {
   font-size: 2.4rem;
 }
@@ -2364,10 +2369,16 @@ body.author-template .content {
   border-radius: 2rem;
   color: white;
   border-bottom: 0px;
+  text-align: justify;
 }
 
 .storybox .title {
   padding: 1.5rem;
+  font-size: 2rem;
+}
+
+.storybox p {
+  margin-bottom: 1rem;
 }
 
 .storybox .content {
@@ -2378,5 +2389,5 @@ body.author-template .content {
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   float: none;
-  width: 100%;
+  width: auto;
 }
