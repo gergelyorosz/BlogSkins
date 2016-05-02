@@ -1394,7 +1394,7 @@ body:not(.post-template) .post-title {
 }
 
 .read-next-story .post:before {
-    content: "Read This Next";
+    content: "Következő cikk";
     padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1.1rem;
@@ -1405,7 +1405,7 @@ body:not(.post-template) .post-title {
     transition: all 0.5s ease;
 }
 .read-next-story.prev .post:before {
-    content: "You Might Enjoy";
+    content: "Olvastad már?";
 }
 
 .read-next-story h2 {
@@ -2253,7 +2253,7 @@ aside.read-next {
   content: "\f1d8";
 }
 
-.elusive-icon.rss:before {
+.elusive-icon.rss:before, .elusive-icon.RSS:before {
   content: "\f1e8";
 }
 
@@ -2390,4 +2390,8 @@ body.author-template .content {
   border-bottom-right-radius: 1.5rem;
   float: none;
   width: auto;
+}
+
+.translationbox {
+  font-size: 1.4rem;
 }
